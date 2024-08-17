@@ -1,20 +1,20 @@
-const express = require('express');
-const fs = require('fs');
+import express, { json } from 'express';
+import { readFileSync, writeFileSync } from 'fs';
 const app = express();
-const productRouter = require('./routes/productRouter');
+import productRouter from './routes/productRouter';
 const port = 3000;
 
-app.use(express.json());
+app.use(json());
 
 app.use('/products', productRouter);
 
 const readDatabase = () => {
-  const data = fs.readFileSync('database.json', 'utf8');
+  const data = readFileSync('database.json', 'utf8');
   return JSON.parse(data);
 };
 
 const writeDatabase = (data) => {
-  fs.writeFileSync('database.json', JSON.stringify(data, null, 2));
+  writeFileSync('database.json', JSON.stringify(data, null, 2));
 };
 
 // GET all products

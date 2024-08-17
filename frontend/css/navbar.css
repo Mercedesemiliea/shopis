@@ -1,0 +1,41 @@
+/* Standardnav: Synlig för större skärmar */
+nav {
+    display: block;
+    text-transform: uppercase;
+    padding: 1em 0;
+    font-family: fantasy;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2980b9;
+}
+
+nav ul li a i {
+    margin-right: 0.5em;
+}
+
+/* Dölj navigering för skärmar mindre än 900px */
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+}

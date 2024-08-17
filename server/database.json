@@ -2,21 +2,24 @@
     "products": [
         {
             "id": 1,
-            "name": "Product 1",
-            "price": 19.99,
-            "image": "image1.jpg"
+            "name": "Alpha",
+            "description": "Alpha is the perfect household assistant, helping with daily tasks such as cleaning, organizing, and managing schedules.",
+            "price": 1999.99,
+            "image": "alpha.jpg"
         },
         {
             "id": 2,
-            "name": "Product 2",
-            "price": 29.99,
-            "image": "image2.jpg"
+            "name": "Beta",
+            "description": "Beta specializes in personal care, offering companionship, monitoring health, and ensuring your well-being.",
+            "price": 2499.99,
+            "image": "beta.jpg"
         },
         {
             "id": 3,
-            "name": "Product 3",
-            "price": 39.99,
-            "image": "image3.jpg"
+            "name": "Gamma",
+            "description": "Gamma is a multifunctional AI robot, ideal for security, smart home integration, and advanced home automation.",
+            "price": 2999.99,
+            "image": "gamma.jpg"
         }
     ]
 }
