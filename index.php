@@ -51,9 +51,7 @@ $products = json_decode($response, true);
                 <p>Price: $<?php echo htmlspecialchars($product['price']); ?></p>
                 <p class="product-description"><?php echo htmlspecialchars($product['description']); ?></p>
                 <a href="product.php?id=<?php echo $product['id']; ?>" class="product-link">Buy Now</a>
-                <?php if (!empty($product['image'])): ?>
-                    <img src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
-                <?php endif; ?>
+                
             </li>
         <?php endforeach; ?>
     </ul>

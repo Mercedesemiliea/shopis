@@ -2,12 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap');
 
 /* Grundinställningar */
-body,
-html {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-
     color: #ecf0f1;
 }
 
@@ -16,44 +14,110 @@ html {
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 200%;
-    top: 20%;
-}
-
-/* Titel på sidan */
-.page-title h1 {
-    font-size: 8rem;
-    font-family: "Anton", sans-serif;
-    text-transform: uppercase;
-    border-bottom: 1px solid white;
+    height: 500vh;
+    top: 30%;
 }
 
 /* Produktlista */
 .product-list {
+    width: 100%;
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    top: -12%;
+    flex-direction: column;
+
+}
+
+/* Titel på sidan */
+.product-beta h2 {
+
+    position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: hotpink;
+
+
+    font-size: 8rem;
+
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    text-decoration: none;
 }
 
-/* Enskild produkt */
-.product {
+.product-alpha h3 {
 
-    padding: 2rem;
-    border-radius: 10px;
+    position: absolute;
 
-    flex: 1;
+    font-size: 8rem;
+
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+.product-list h4 {
+    font-size: 8rem;
+    position: absolute;
+    left: 10%;
+
+    color: rgb(0, 0, 0);
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.product-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 100%;
+
 
 }
 
 
 
-.product-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.5rem;
-    color: #ecf0f1;
+.product-list li:nth-child(3),
+h2 {
+    flex: 2 1 calc(33.333% - 10rem);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
+
+.product-list li:nth-child(4),
+h2 {
+    flex: 2 1 calc(33.333% - 10rem);
+    padding-right: 1.5rem;
+    text-align: right;
+    /* Justera texten enligt behov */
+    margin-top: 2rem;
+    /* Justera spacing ovanför rubriken */
+}
+
+
 
 .product-description {
     font-size: 1.0rem;
@@ -63,22 +127,59 @@ html {
 
 .product-link {
     text-decoration: none;
-    color: #3498db;
+    color: #db34b4;
     font-size: 1.5rem;
 
 }
 
-.img-dna {
-    position: absolute;
-    background-image: url("../img/129783.jpg");
+.product-long-description {
+    font-size: 1.0rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
 
-    height: 600px;
-    top: 10%;
+
+.product-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 700px;
+
+
     object-fit: cover;
     object-position: center;
-    background-repeat: no-repeat;
 
+    padding-bottom: 0.5rem;
+
+
+}
+
+
+.info-button {
+    background: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.info-button:hover {
+    color: rgb(69, 67, 68);
+}
+
+.product-long-description {
+
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+
+    font-size: 1rem;
+    line-height: 1.6;
+    display: none;
 }
 
 /* Responsiv design */

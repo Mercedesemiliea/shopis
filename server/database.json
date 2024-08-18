@@ -5,21 +5,28 @@
             "name": "Alpha",
             "description": "Alpha is the perfect household assistant, helping with daily tasks such as cleaning, organizing, and managing schedules.",
             "price": 1999.99,
-            "image": "alpha.jpg"
+            "image": "frontend/img/ai-generated-8416232_1280.jpg"
         },
         {
             "id": 2,
             "name": "Beta",
             "description": "Beta specializes in personal care, offering companionship, monitoring health, and ensuring your well-being.",
             "price": 2499.99,
-            "image": "beta.jpg"
+            "image": "frontend/img/ai-generated-8416231_1280.jpg"
         },
         {
             "id": 3,
             "name": "Gamma",
             "description": "Gamma is a multifunctional AI robot, ideal for security, smart home integration, and advanced home automation.",
             "price": 2999.99,
-            "image": "gamma.jpg"
+            "image": "frontend/img/2151254513.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Zeta & Eta",
+            "description": "Zeta is not just any AI, along with Eta, they represent the pinnacle of artificial intelligence evolution. As the first artificial twins to ever exist, they are a marvel of innovation and design, created for those who seek something truly extraordinary.",
+            "price": 3499.99,
+            "image": "frontend/img/ai-generated-8633519_1280.png"
         }
     ]
 }
