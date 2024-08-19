@@ -49,6 +49,7 @@ $products = json_decode($response, true);
 
                             <?php elseif ($product['id'] == 3): ?>
                                 <h3><?php echo htmlspecialchars($product['name']); ?></h3>
+                                
                             <?php elseif ($product['id'] == 4): ?>
                                 <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                             <?php endif; ?>
@@ -63,13 +64,12 @@ $products = json_decode($response, true);
                                 <?php echo htmlspecialchars($product['description']); ?>
                             </p>
 
-                            <button class="info-button" onclick="toggleDescription(<?php echo $product['id']; ?>)">More
-                                Info</button>
+                            
 
 
-                                <?php if ($product['id'] == 1): ?>
-                            <div id="description-<?php echo $product['id']; ?>" class="product-long-description"
-                                style="display: none;">
+                                <?php if ($product['id'] == 1 || $product['id'] == 2): ?>
+                                    <div id="description-<?php echo $product['id']; ?>" class="product-long-description">
+                                    <?php if ($product['id'] == 1): ?>
                                 <p>Alpha Nova Astralyte is the result of a unique research collaboration between 
                                     dedicated scientists, engineers, and artists from around the world. 
                                     Every line and curve in its design, every algorithm and piece of code, 
@@ -89,11 +89,7 @@ $products = json_decode($response, true);
                                     offering support when you need it most, and creating a genuine sense of presence.</p>
 
                                     
-                            </div>
-
-                            <?php elseif ($product['id'] == 2): ?>
-                            <div id="description-<?php echo $product['id']; ?>" class="product-long-description"
-                                style="display: none;">
+                                    <?php elseif ($product['id'] == 2): ?>
                                 <p>Beta is the ultimate companion robot, designed to provide you with the care, 
                                     support, and companionship you need to live your best life. <br>
                                     <br>
@@ -107,8 +103,14 @@ $products = json_decode($response, true);
                                     <br>
                                     Beta is more than just a robot; it is a member of your family, a trusted companion that will be by your side 
                                     through thick and thin, offering support, encouragement, and love.</p>
-                            </div>
+                            <?php endif; ?>
+                                </div>
+                               
+                               
+                                        
                             <?php elseif ($product['id'] == 3): ?>
+                                <button class="info-button" onclick="toggleDescription(<?php echo $product['id']; ?>)">More
+                                Info</button>
                             <div id="description-<?php echo $product['id']; ?>" class="product-long-description"
                                 style="display: none;">
                                 <p>Gamma is the ultimate smart home assistant, designed to make your life easier, 
@@ -124,9 +126,13 @@ $products = json_decode($response, true);
                                     <br>
                                     Gamma is more than just a smart home assistant; it is a trusted guardian that will keep you and your 
                                     loved ones safe and secure, day and night.</p>
+
+                                    
                             </div>
 
                             <?php elseif ($product['id'] == 4): ?>
+                                <button class="info-button" onclick="toggleDescription(<?php echo $product['id']; ?>)">More
+                                Info</button>
                             <div id="description-<?php echo $product['id']; ?>" class="product-long-description"
                                 style="display: none;">
                                 <p>
@@ -175,7 +181,7 @@ $products = json_decode($response, true);
                             <p>Price: $<?php echo htmlspecialchars($product['price']); ?></p>
                             <a href="product.php?id=<?php echo $product['id']; ?>" class="product-link">Buy Now</a>
 
-
+                               
                         </li>
 
                     <?php endforeach; ?>

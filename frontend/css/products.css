@@ -12,18 +12,19 @@ html {
     flex-direction: column;
 
 
-    height: 800vh;
+    height: 520vh;
 }
 
 /* Produktsektion */
 .products-container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 500vh;
+    height: auto;
+
 
 
 }
@@ -31,11 +32,13 @@ html {
 /* Produktlista */
 .product-list {
     width: 100%;
+    top: 0;
     display: flex;
-    position: relative;
+    position: absolute;
     gap: 2rem;
-    top: -12%;
+
     flex-direction: column;
+    justify-content: center;
 
 
 }
@@ -57,7 +60,7 @@ html {
 .product-list h2 {
 
     position: absolute;
-    top: 43%;
+    top: 33%;
     left: 10%;
     color: rgb(0, 0, 0);
     display: flex;
@@ -92,11 +95,13 @@ html {
 }
 
 .product-list li {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     flex: 1 1 100%;
+
 
 
 
@@ -171,18 +176,14 @@ html {
 
 
 .product-long-description {
-    margin-top: 1rem;
-    padding: 1rem;
-    width: 60%;
+    position: relative;
     align-items: center;
     text-align: left;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
-    position: relative;
-    z-index: 2;
-    background-color: white;
-    color: black;
+    width: 70%;
+
+    z-index: 999;
+
+    color: white;
 
 }
 

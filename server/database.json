@@ -7,7 +7,7 @@
             "description": "Alpha Nova is the epitome of refined AI, engineered for those who seek the perfect blend of technology and elegance. It elevates your daily routines, turning the ordinary into the exceptional with effortless precision.",
             "price": 1999.99,
             "image": "frontend/img/ai-generated-8416232_1280.jpg",
-            "has_info_button": true,
+            "has_info_button": false,
             "long_description": ""
         },
         {
@@ -17,7 +17,7 @@
             "description": "Beta specializes in personal care, offering companionship, monitoring health, and ensuring your well-being.",
             "price": 2499.99,
             "image": "frontend/img/ai-generated-8416231_1280.jpg",
-            "has_info_button": true,
+            "has_info_button": false,
             "long_description": ""
         },
         {

@@ -7,9 +7,22 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(26, 10, 31), rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgb(30, 0, 40) 0%, rgb(26, 10, 31) 50%, rgb(0, 0, 0) 100%);
+    animation: gradientShift 10s ease-in-out infinite;
+}
 
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(to bottom, rgb(30, 0, 40) 0%, rgb(26, 10, 31) 50%, rgb(0, 0, 0) 100%);
+    }
 
+    50% {
+        background: linear-gradient(to bottom, rgb(35, 0, 45) 0%, rgb(28, 8, 34) 50%, rgb(5, 0, 10) 100%);
+    }
+
+    100% {
+        background: linear-gradient(to bottom, rgb(30, 0, 40) 0%, rgb(26, 10, 31) 50%, rgb(0, 0, 0) 100%);
+    }
 }
 
 .index-wrapper {
