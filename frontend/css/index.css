@@ -48,7 +48,20 @@ body {
 
 }
 
-
+.img-dna {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(15deg);
+    filter: sepia(60%);
+    background-image: url('../img/129783.jpg');
+}
 
 .content {
     position: absolute;

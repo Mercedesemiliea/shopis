@@ -32,10 +32,11 @@
         },
         {
             "id": 4,
-            "name": "Zeta Illumin & Eta Nocturnalis",
+            "name": "Zeta & Eta ",
+            "last_name": "Zeta Illumin & Eta Nocturnalis",
             "description": "Zeta is not just any AI, along with Eta, they represent the pinnacle of artificial intelligence evolution. As the first artificial twins to ever exist, they are a marvel of innovation and design, created for those who seek something truly extraordinary.",
             "price": 3499.99,
-            "image": "frontend/img/ai-generated-8633519_1280.png",
+            "image": "frontend/img/twins.png",
             "has_info_button": true,
             "long_description": ""
         }

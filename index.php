@@ -27,7 +27,7 @@ $products = json_decode($response, true);
     </div>
  
 
-  
+  <div class="img-dna"></div>
 
 
     <div class="products-container">
