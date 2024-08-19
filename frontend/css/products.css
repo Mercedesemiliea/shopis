@@ -2,11 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap');
 
 /* Grundinställningar */
-body {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+
+
+    height: 800vh;
 }
 
 /* Produktsektion */
@@ -18,7 +24,8 @@ body {
     justify-content: center;
     width: 100%;
     height: 500vh;
-    top: 30%;
+
+
 }
 
 /* Produktlista */
@@ -30,51 +37,49 @@ body {
     top: -12%;
     flex-direction: column;
 
+
 }
 
 /* Titel på sidan */
-.product-beta h2 {
+.product-list h1 {
 
     position: absolute;
+    right: 15%;
+    color: rgb(0, 0, 0);
+    top: 12%;
+    font-size: 8rem;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+.product-list h2 {
+
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: hotpink;
-
-
     font-size: 8rem;
-
-    font-family: "Anton", sans-serif;
-    text-transform: uppercase;
-    border-bottom: 1px solid white;
-    text-decoration: none;
-}
-
-.product-alpha h3 {
-
-    position: absolute;
-
-    font-size: 8rem;
-
-    font-family: "Anton", sans-serif;
-    text-transform: uppercase;
-    border-bottom: 1px solid white;
-    text-decoration: none;
-}
-
-.product-list h4 {
-    font-size: 8rem;
-    position: absolute;
-    left: 10%;
-
-    color: rgb(0, 0, 0);
     font-family: "Anton", sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid rgb(0, 0, 0);
     text-decoration: none;
 }
+
+.product-list h3 {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
 
 .product-list ul {
     list-style-type: none;
@@ -82,6 +87,8 @@ body {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+
+
 }
 
 .product-list li {
@@ -92,12 +99,14 @@ body {
     flex: 1 1 100%;
 
 
+
 }
 
+.product-link {
+    padding-bottom: 3rem;
+}
 
-
-.product-list li:nth-child(3),
-h2 {
+.product-list li:nth-child(3) {
     flex: 2 1 calc(33.333% - 10rem);
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -107,36 +116,14 @@ h2 {
     margin-top: 2rem;
 }
 
-.product-list li:nth-child(4),
-h2 {
+.product-list li:nth-child(4) {
     flex: 2 1 calc(33.333% - 10rem);
     padding-right: 1.5rem;
-    text-align: right;
-    /* Justera texten enligt behov */
+
     margin-top: 2rem;
-    /* Justera spacing ovanför rubriken */
-}
-
-
-
-.product-description {
-    font-size: 1.0rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-}
-
-.product-link {
-    text-decoration: none;
-    color: #db34b4;
-    font-size: 1.5rem;
 
 }
 
-.product-long-description {
-    font-size: 1.0rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-}
 
 
 .product-image {
@@ -145,8 +132,6 @@ h2 {
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
-
-
     object-fit: cover;
     object-position: center;
 
@@ -155,6 +140,16 @@ h2 {
 
 }
 
+.product-description {
+    font-size: 1.0rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    width: 60%;
+
+
+
+
+}
 
 .info-button {
     background: none;
@@ -165,21 +160,33 @@ h2 {
     cursor: pointer;
 }
 
-.info-button:hover {
-    color: rgb(69, 67, 68);
+.product-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.0rem;
+    text-transform: uppercase;
 }
 
+.info-button:hover {
+    background-color: hotpink;
+}
+
+
+
 .product-long-description {
-
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    margin-top: 2rem;
-
-    font-size: 1rem;
-    line-height: 1.6;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 60%;
+    align-items: center;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    color: black;
+
 }
 
 /* Responsiv design */
