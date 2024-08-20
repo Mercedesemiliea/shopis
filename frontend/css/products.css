@@ -12,7 +12,7 @@ html {
     flex-direction: column;
 
 
-    height: 520vh;
+    height: 525vh;
 }
 
 /* Produktsektion */
@@ -24,6 +24,8 @@ html {
     justify-content: center;
     width: 100%;
     height: auto;
+    top: -10%;
+
 
 
 
@@ -60,7 +62,7 @@ html {
 .product-list h2 {
 
     position: absolute;
-    top: 33%;
+    top: 28%;
     left: 10%;
     color: rgb(0, 0, 0);
     display: flex;
@@ -114,9 +116,9 @@ html {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     text-align: center;
-
+    margin-left: 4rem;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: -5rem;
 }
 
 .product-list li:nth-child(4) {
@@ -139,6 +141,22 @@ html {
     object-position: center;
 
     padding-bottom: 0.5rem;
+
+
+}
+
+
+.special-style-3 {
+    border-radius: 40px;
+    object-fit: contain;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 0.5rem;
+    margin-right: 2rem;
+}
+
+.special-style-4 {
+    object-fit: contain;
 
 
 }
@@ -205,9 +223,7 @@ html {
     border-radius: 10px;
 }
 
-.product-long-description::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+
 
 /* Responsiv design */
 @media (max-width: 1200px) {
@@ -235,9 +251,14 @@ html {
         top: 25%;
     }
 
+    .special-style-3 {
+        width: 115%;
+
+    }
+
     body,
     html {
 
-        height: 150%;
+        height: 170%;
     }
 }

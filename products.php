@@ -56,9 +56,12 @@ $products = json_decode($response, true);
 
 
                             <?php if (!empty($product['image'])): ?>
-                                <img src="<?php echo htmlspecialchars($product['image']); ?>"
-                                    alt="<?php echo htmlspecialchars($product['name']); ?>" class="product-image">
-                            <?php endif; ?>
+    <img src="<?php echo htmlspecialchars($product['image']); ?>" 
+         alt="<?php echo htmlspecialchars($product['name']); ?>" 
+         class="product-image 
+                <?php echo $product['id'] == 3 ? 'special-style-3' : ''; ?> 
+                <?php echo $product['id'] == 4 ? 'special-style-4' : ''; ?>">
+<?php endif; ?>
 
                             <p class="product-description">
                                 <?php echo htmlspecialchars($product['description']); ?>
