@@ -2,8 +2,6 @@
 $url = 'http://localhost:3000/products';
 $response = file_get_contents($url);
 $products = json_decode($response, true);
-
-
 ?>
 
 <script>
@@ -21,7 +19,7 @@ $products = json_decode($response, true);
 <head>
     <title>AI Robot Shop</title>
     <link rel="stylesheet" href="frontend/css/index.css">
-    <link rel="stylesheet" href="frontend/css/navbar.css">
+    <link rel="stylesheet" href="frontend/css/Navbar.css">
     <link rel="stylesheet" href="frontend/css/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap"
         rel="stylesheet">

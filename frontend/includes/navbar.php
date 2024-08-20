@@ -1,7 +1,7 @@
 <php?
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="frontend/css/Navbar.css">
 </head>
 
 <nav>
