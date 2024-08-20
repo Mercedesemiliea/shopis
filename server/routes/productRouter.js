@@ -56,6 +56,17 @@ const deleteProduct = (req, res) => {
     res.json(deletedProduct);
 };
 
+router.get('/export/csv', (req, res) => {
+    const products = readDatabase();
+    let csv = 'id,name,price,description\n';
+    products.forEach(product => {
+        csv += `${product.id},${product.name},${product.price},${product.description}\n`;
+    });
+    res.header('Content-Type', 'text/csv');
+    res.attachment('products.csv');
+    res.send(csv);
+});
+
 // Define routes
 router.get('/', getAllProducts);
 router.get('/:id', getProductById);
