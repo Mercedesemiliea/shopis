@@ -4,12 +4,16 @@
         {
             "src": "index.php",
             "use": "@vercel/node"
+        },
+        {
+            "src": "products.php",
+            "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "/index.php"
+            "source": "/(.*)",
+            "destination": "/api"
         }
     ]
 }
