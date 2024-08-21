@@ -8,6 +8,10 @@ app.use(express.json());
 
 app.use('/products', productRouter);
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Shopis API');
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
