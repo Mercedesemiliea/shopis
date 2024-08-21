@@ -1,15 +1,5 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "shopis/server/server.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "shopis/index.php",
-            "use": "@vercel/php"
-        }
-    ],
     "routes": [
         {
             "src": "/api/(.*)",
