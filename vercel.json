@@ -3,17 +3,13 @@
     "builds": [
         {
             "src": "index.php",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "products.php",
-            "use": "@vercel/node"
+            "use": "@vercel/php"
         }
     ],
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/api"
+            "src": "/(.*)",
+            "dest": "/index.php"
         }
     ]
 }
