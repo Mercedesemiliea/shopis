@@ -15,7 +15,8 @@ $products = json_decode($response, true);
         }
     }
 </script>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>AI Robot Shop</title>
     <link rel="stylesheet" href="public/css/index.css">
