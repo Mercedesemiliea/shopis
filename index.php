@@ -10,13 +10,13 @@ $products = json_decode($response, true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="frontend/css/Navbar.css">
-    <link rel="stylesheet" href="frontend/css/index.css">
+    <link rel="stylesheet" href="public/css/Navbar.css">
+    <link rel="stylesheet" href="public/css/index.css">
     <title>Products</title>
 </head>
 <body>
   <div class="index-wrapper">
-<?php include 'frontend/includes/navbar.php'; ?>
+<?php include 'public/includes/navbar.php'; ?>
   
 <div class="video-background">
 

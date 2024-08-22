@@ -18,15 +18,15 @@ $products = json_decode($response, true);
 
 <head>
     <title>AI Robot Shop</title>
-    <link rel="stylesheet" href="frontend/css/index.css">
-    <link rel="stylesheet" href="frontend/css/Navbar.css">
-    <link rel="stylesheet" href="frontend/css/products.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/Navbar.css">
+    <link rel="stylesheet" href="public/css/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <?php include 'frontend/includes/navbar.php'; ?>
+    <?php include 'public/includes/navbar.php'; ?>
 
     <div class="products-container">
 
