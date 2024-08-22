@@ -1,6 +1,6 @@
-import { listen } from './server/server';
-const port = process.env.PORT || 8000;
+const app = require('./server');
+const port = process.env.PORT || 3000;
 
-listen(port, () => {
+app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
