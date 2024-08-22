@@ -246,40 +246,63 @@ body {
 }
 
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
+a:hover {
+    color: #cbc2cd;
+}
 
 
 
 @media (max-width: 900px) {
-    .video-background {
-        top: 0;
+
+    .products-wrapper {
+        width: 100%;
+        left: 0;
+    }
+
+    .products {
+        top: 40%;
+        left: 0;
+        border-bottom: none;
     }
 
 
 
-    .products {
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        height: 110vh;
-        width: 100%;
-        background-color: rgb(9, 9, 9);
-        top: 110%;
+    .products h1 {
+        width: 90%;
+        left: 10%;
+
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .products h2 {
+        font-size: 1.5rem;
     }
 
     .content {
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 100%;
-        height: 135vh;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        font-size: 2em;
+        width: 90%;
+        left: 5%;
+    }
+
+    .content p {
+        margin-top: 35%;
+    }
+
+
+    .side-nav {
+        display: none;
+        /* Döljer sidomenyn på riktigt små skärmar */
+    }
+
+    .img-dna {
+        width: 70%;
+        height: 30%;
+        top: 40%;
+        left: 30%;
     }
 }

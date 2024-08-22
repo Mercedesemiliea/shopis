@@ -1,15 +1,5 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "index.php",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "products.php",
-            "use": "@vercel/node"
-        }
-    ],
     "rewrites": [
         {
             "source": "/(.*)",
