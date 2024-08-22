@@ -16,8 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/products', productRouter);
 
-// Servera statiska filer från 'public' mappen
-//app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, '..', 'shopis')));
+
+
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
