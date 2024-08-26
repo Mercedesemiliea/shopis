@@ -18,8 +18,8 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/api/products.php",
-            "dest": "/api/index.php"
+            "src": "/tutorial",
+            "dest": "/api/tutorial.php"
         },
         {
             "src": "/public/(.*)",
