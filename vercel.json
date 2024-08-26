@@ -26,7 +26,7 @@
             "dest": "/$1"
         }
     ],
-    "config": {
+    "use": {
         "phpVersion": "8.1"
     }
 }
