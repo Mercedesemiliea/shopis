@@ -24,10 +24,11 @@ $products = json_decode($response, true);
     <link rel="stylesheet" href="public/css/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="/public/css/products.css">
 </head>
 
 <body>
-    <?php include 'public/includes/navbar.php'; ?>
+<?php include './../includes/navbar.php'; ?>
 
     <div class="products-container">
 
