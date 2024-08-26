@@ -26,12 +26,7 @@
             "dest": "/$1"
         }
     ],
-    "build": {
-        "env": {
-            "LD_LIBRARY_PATH": "/usr/local/lib"
-        },
-        "commands": {
-            "install": "apt-get update && apt-get install -y libssl1.0.0"
-        }
+    "config": {
+        "phpVersion": "8.1"
     }
 }
