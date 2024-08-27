@@ -4,14 +4,14 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const productRouter = require('../server/routes/productRouter');
+const productRouter = require('./routes/productRouter');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'server', 'index.php'));
+    res.send('Welcome to the server');
 });
 
 app.use('/products', productRouter);
