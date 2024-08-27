@@ -6,10 +6,6 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/",
-            "dest": "/api/products.php"
-        },
-        {
             "src": "/products",
             "dest": "/api/products.php"
         },
