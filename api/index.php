@@ -18,7 +18,7 @@ $products = json_decode($response, true);
 
 <body>
     <div class="index-wrapper">
-  
+
 
         <div class="video-background">
 
@@ -30,17 +30,17 @@ $products = json_decode($response, true);
                 tasks to personal assistance. Discover how we can transform your everyday life.</p>
         </div>
         <nav class="side-nav">
-                <ul>
-                    <li><a href="/index.php">Dashboard</a></li>
-                    <li><a href="/products.php">Products</a></li>
-                    <li><a href="/products/create">Add product</a></li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                </ul>
-            </nav>
-            <h1>Product Management</h1>
+            <ul>
+                <li><a href="/index.php">Dashboard</a></li>
+                <li><a href="/products.php">Products</a></li>
+                <li><a href="/products/create">Add product</a></li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </nav>
+        <h1>Product Management</h1>
         <div class="products-container">
-          
+
             <div class="products">
                 <div class="form-container">
                     <h2>Create a New Product</h2>
@@ -76,7 +76,7 @@ $products = json_decode($response, true);
                 </div>
 
 
-    </div>
+            </div>
 
 </body>
 
