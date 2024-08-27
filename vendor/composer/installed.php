@@ -3,7 +3,7 @@
         'name' => 'shopware/vercel-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e2ee953435487cf6ac47845cfbd7f058a8431db2',
+        'reference' => 'a33df3499da51922d928b986ccb646ff6395131b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'shopware/vercel-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e2ee953435487cf6ac47845cfbd7f058a8431db2',
+            'reference' => 'a33df3499da51922d928b986ccb646ff6395131b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
