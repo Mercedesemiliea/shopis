@@ -3,27 +3,7 @@ $url = 'http://localhost:3000/products';
 $response = file_get_contents($url);
 $products = json_decode($response, true);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $data = [
-        'name' => $_POST['name'],
-        'price' => $_POST['price'],
-        'description' => $_POST['description'],
-    ];
 
-    $options = [
-        'http' => [
-            'method' => 'POST',
-            'header' => 'Content-type: application/json',
-            'content' => json_encode($data),
-        ],
-    ];
-
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    if ($result === FALSE) {
-        echo 'An error occurred.';
-    }
-}
 
 ?>
 <!DOCTYPE html>
