@@ -12,12 +12,22 @@
     ],
     "routes": [
         {
-            "src": "/api/(.*)",
-            "dest": "/server/index.js"
+            "src": "/api/index.php",
+            "headers": {
+                "Location": "/index"
+            },
+            "status": 307
         },
         {
-            "src": "/(.*)",
-            "dest": "/index.php"
+            "src": "/",
+            "dest": "/api/products.php"
+        },
+        {
+            "src": "/products",
+            "dest": "/api/products.php"
+        },
+        {
+            "src": "/public/(.*)",
+            "dest": "/$1"
         }
     ]
-}
