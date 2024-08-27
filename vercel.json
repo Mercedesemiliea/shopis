@@ -8,20 +8,20 @@
     ],
     "routes": [
         {
-            "src": "/index",
-            "dest": "/api/index.php"
+            "src": "server/index.js",
+            "use": "@vercel/node"
         },
         {
-            "src": "/products",
-            "dest": "/api/products.php"
+            "src": "index.php",
+            "use": "@vercel/php"
         },
         {
-            "src": "/public/(.*)",
-            "dest": "/$1"
+            "src": "/api/(.*)",
+            "dest": "/server/index.js"
         },
         {
             "src": "/(.*)",
-            "dest": "server/index.js"
+            "dest": "/index.php"
         }
     ]
 }
