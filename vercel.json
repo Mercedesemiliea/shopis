@@ -3,14 +3,21 @@
     "routes": [
         {
             "src": "/api/index.php",
-            "dest": "/index.php",
             "headers": {
-                "Location": "/index.php"
+                "Location": "/index"
             },
-            "status": 301
+            "status": 307
         },
         {
-            "src": "/api/(.*)",
+            "src": "/",
+            "dest": "/api/products.php"
+        },
+        {
+            "src": "/products",
+            "dest": "/api/products.php"
+        },
+        {
+            "src": "/public/(.*)",
             "dest": "/$1"
         }
     ]
