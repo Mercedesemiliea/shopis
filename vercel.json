@@ -8,7 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/api/index.php",
+            "src": "/index",
             "dest": "/api/index.php"
         },
         {
@@ -18,6 +18,10 @@
         {
             "src": "/public/(.*)",
             "dest": "/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "server/index.js"
         }
     ]
 }
