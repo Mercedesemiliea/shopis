@@ -4,12 +4,20 @@
         {
             "src": "server/index.js",
             "use": "@vercel/node"
+        },
+        {
+            "src": "index.php",
+            "use": "@vercel/php"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server/index.php"
+            "dest": "server/index.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.php"
         }
     ]
 }
