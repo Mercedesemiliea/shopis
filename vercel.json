@@ -4,31 +4,12 @@
         {
             "src": "server/index.js",
             "use": "@vercel/node"
-        },
-        {
-            "src": "api/index.php",
-            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/api/index.php",
-            "headers": {
-                "Location": "/index"
-            },
-            "status": 307
-        },
-        {
-            "src": "/",
-            "dest": "/api/products.php"
-        },
-        {
-            "src": "/products",
-            "dest": "/api/products.php"
-        },
-        {
-            "src": "/public/(.*)",
-            "dest": "/$1"
+            "src": "/(.*)",
+            "dest": "server/index.js"
         }
     ]
 }
