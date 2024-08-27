@@ -10,6 +10,10 @@
         {
             "src": "/(.*)",
             "dest": "server/index.js"
+        },
+        {
+            "src": "server/index.php",
+            "dest": "server/index.php"
         }
     ]
 }
