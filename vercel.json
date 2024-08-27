@@ -1,18 +1,9 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "server/index.js",
-            "use": "@vercel/php"
-        }
-    ],
     "routes": [
         {
             "src": "/api/index.php",
-            "headers": {
-                "Location": "/index"
-            },
-            "status": 307
+            "dest": "/api/index.php"
         },
         {
             "src": "/",
