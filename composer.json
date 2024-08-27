@@ -5,10 +5,5 @@
     "license": "MIT",
     "require": {
         "vlucas/phpdotenv": "^5.5"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "apt-get update && apt-get install -y libssl1.0.0"
-        ]
     }
 }
