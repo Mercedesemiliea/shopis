@@ -3,7 +3,11 @@ $url = 'http://localhost:3000/products';
 $response = file_get_contents($url);
 $products = json_decode($response, true);
 
-
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $url = 'http://localhost:3000/products';
+    $response = file_get_contents($url);
+    $products = json_decode($response, true);
+}
 
 ?>
 <!DOCTYPE html>
