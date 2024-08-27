@@ -8,6 +8,9 @@ const productRouter = require('./routes/productRouter');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.php');
+});
 
 app.use('/products', productRouter);
 
